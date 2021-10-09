@@ -1,0 +1,155 @@
+/* Colors 
+
+
+Primary #83F3ED
+Black   #011627
+White   #fafaff 
+
+*/
+h1,h2,h3{
+    font-weight: 900;
+
+}
+
+h4,h5,h6{
+    font-weight: 700;
+}
+
+.btn-outline-secondary{
+    background-color: transparent !important;
+    border-color: #011627 !important;
+    color: #011627 !important; 
+    border-radius: 0;
+    position: relative;
+}
+.btn-outline-secondary:before {
+    content:' ';
+    position: absolute;
+    background-color: #83F3ED;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-outline-secondary:hover:before{
+    width: 100%;
+}
+
+.btn-secondary {
+    background: #011627;
+    border-radius: 0%;
+    border-color: #011627;
+}
+.btn-secondary:hover{
+    color: #83F3ED;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.text-center i{
+    font-size: 30px !important;
+}
+i{
+    font-size: 2rem;
+    color: #83F3ED;
+    
+}
+.btn-primary{
+    border-radius: 0%;
+    background-color: #83F3ED;
+    border-color: #83F3ED;
+    color: #011627;
+}
+.btn-primary:hover{
+    background-color: transparent;
+    color:#83F3ED ;
+}
+
+/* Navbar */
+.navbar{
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+.nav-link, .navbar-brand{
+    color: #011627;
+}
+
+/*Call To Action */
+.call-to-action{
+    background-color:#011627 ;
+    color: #fafaff  ;
+}
+
+.heading-line{
+    height: 3px;
+    width: 10%;
+    background-color: #83F3ED;
+}
+
+.nav-link:hover,
+.navbar-brand:hover{
+    color: #777;
+}
+
+.navbar-brand{
+    font-size: 1.8rem;
+}
+
+
+.dark{
+    background-color: #011627;
+    color: #83F3ED;
+    height: 300px;
+    width:100vh;
+}
+
+.portfolio .img-fluid{
+    height: 300px;
+    object-fit: cover;
+}
+@media screen and (min-width: 438px) and (max-width: 989px){
+    .portfolio .img-fluid{
+        width: 100%;
+        }
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+/* filter thing*/
+.portfolio .col-lg-3 {
+    position: relative;
+}
+.filter{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #83F3ED;
+    opacity: 0.7;
+}
+
+
+.footer{
+    background-color: #011627;
+    color:#fafaff;
+}
+
+
+/* responsive */
+
+@media (max-width:900px){
+    .call-to-action .container  {
+        width: 100% !important;
+    }
+    .navbar .nav-item{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
